@@ -2,6 +2,7 @@
 <html>
 <head>
     <title> Portfolio | rks </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css" type="text/css">
     <meta name="viewport" content="width=device-width, initial-scale=1 , minimum-scale=1"> 
     <script src="https://kit.fontawesome.com/8c456c6aa2.js" crossorigin="anonymous"></script>
@@ -10,7 +11,50 @@
 
     <header id="body-header">
         <nav>
+            
+<!--            button for mobile view     -->
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col d-sm-none">
+                     
+                            <nav class="navbar navbar-expand-lg navbar-light bg-none">
+                                 <a class="navbar-brand" href="#"></a>
+                                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                    <span class="navbar-toggler-icon"></span>
+                                    </button>
 
+                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item">
+                                     <h5><a class="nav-link text-light" href="#">Home</a></h5>
+                                    </li>
+                                    <li class="nav-item">
+                                    <h5><a class="nav-link text-light" href="#about">About</a></h5>
+                                    </li>
+                                    <li class="nav-item">
+                                    <h5><a class="nav-link text-light" href="#skills">Skills</a></h5>
+                                    </li>
+                                    <li class="nav-item">
+                                    <h5><a class="nav-link text-light" href="#experience">Experience</a></h5>
+                                    </li>
+                                    <li class="nav-item">
+                                    <h5><a class="nav-link text-light" href="#education">Education</a></h5>
+                                    </li>
+                                    <li class="nav-item">
+                                    <h5><a class="nav-link text-light" href="#portfolio">Portfolio</a></h5>
+                                    </li>
+                                    <li class="nav-item">
+                                    <h5><a class="nav-link text-light" href="#contact">Contact</a></h5>
+                                    </li>
+                                </ul>
+                               </div>
+                          </nav>
+        
+                        </div>
+                    </div>
+                </div>
+            
+<!--  horizontal view navbar for md screen    -->
             <ul class="horizontal-list text-center nav-menu">
                 <li>
                     <a href="#"> Home </a>
@@ -201,7 +245,7 @@
                         <div class="timeline-logo">
                             <img src="https://d5ln38p3754yc.cloudfront.net/member_photos/966699/medium/966699-1497506538.png?1497506538">
                         </div>
-                        <h3 class="experience-designation  m0 m-blue"> Web Development Training </h3>
+                        <h3 class="experience-designation  m0 m-blue"> Web Development </h3>
                         <h4 class="experience-company-name"> Internshala </h4>
                         <h5 class="experience-duration m0"> june 2019 - aug 2019 </h5>
 
@@ -250,8 +294,8 @@
                         <div class="timeline-logo">
                             <img src="images/nitp.png">
                         </div>
-                        <h3 class="experience-designation  m0 m-blue"> Bachelor of Technology </h3>
-                        <h4 class="experience-company-name "> National Institute of Technology Patna </h4>
+                        <h3 class="experience-designation  m0 m-blue"> B.Tech </h3>
+                        <h4 class="experience-company-name "> NIT Patna </h4>
                         <h5 class="experience-duration m0"> July 2016 - Continue </h5>
 
                         <p class="experience-description text-align-justify"> 
@@ -267,7 +311,7 @@
                             <img src="images/jnv.png">
                         </div>
                         <h3 class="experience-designation  m0 m-blue"> Senior School </h3>
-                        <h4 class="experience-company-name "> Jawahar Navodaya Vidyalaya Orai </h4>
+                        <h4 class="experience-company-name "> JNV Orai </h4>
                         <h5 class="experience-duration m0"> April 2014 - April 2015 </h5>
                         <p class="experience-description text-align-justify"> 
                             Completed class twelfth from Jawahar Navodaya Vidyalaya, Orai, Uttar Pradesh with <a href="images/12Marksheat.jpg"><span class="text-highlight"> 86.40% </span> </a> in science stream.
@@ -286,16 +330,12 @@
                             <img src="images/jnv.png">
                         </div>
                         <h3 class="experience-designation  m0 m-blue"> Secondary School </h3>
-                        <h4 class="experience-company-name "> Jawahar Navodaya Vidyalaya Orai </h4>
+                        <h4 class="experience-company-name "> JNV Orai </h4>
                         <h5 class="experience-duration m0"> April 2012 - April 2013 </h5>
 
                         <p class="experience-description text-align-justify"> 
                             Completed class tenth from Jawahar Navodaya Vidyalaya, Orai, Uttar Pradesh with 
                             <a href="images/10thMarksheat.jpg"><span class="text-highlight"> 8.8/10 cgpa</span> </a>.
-<!--
-                            Jawahar Navodaya Vidyalaya follows <span class="text-highlight">Central Board of Secondary Education</span> board. These were awesome days which I spend there and learnt a lots of new skills there.  
-                            I have got <a href="images/10thMarksheat.jpg"><span class="text-highlight"> 8.8 CGPA out of 10 </span> </a> in Secondary School Examination Exam. </p>
--->
                     </div>
                 </div>
                 
@@ -320,21 +360,24 @@
             </h1>
 
             <div id="portfolio-container">
-
+               
+                <a href="http://engineermart.in">
                 <div class="portfolio-image-container">
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            Engineer Mart |
+                            We sell beacuse we care
                         </p>
                     </div>
 
                 </div>
+                </a>
                 <div class="portfolio-image-container">
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000026_1550237353_project_2.jpeg">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            hotel cluster filtering...
                         </p>
                     </div>
 
@@ -343,7 +386,7 @@
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000029_1550237386_project.jpeg">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            Breast Cancer Prediction...
                         </p>
                     </div>
 
@@ -352,7 +395,7 @@
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000027_1550237355_project_3.png">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            rks Dynamic Music Player...
                         </p>
                     </div>
 
@@ -361,21 +404,23 @@
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            Scietific Calculator for calulation...
                         </p>
                     </div>
 
                 </div>
+                <a href="https://rks107.github.io/rohitportfolio">
                 <div class="portfolio-image-container">
                     <img src="https://ninjasfiles.s3.amazonaws.com/asset_0000000000000028_1550237365_tree.jpeg">
                     <div class="portfolio-details">
                         <p>
-                            Write here basic details about the project.
+                            Currently working Coming Soon...
                         </p>
                     </div>
 
                 </div>
 
+                </a>
             </div>
         </section>
 
@@ -450,6 +495,10 @@
         </section>
 
     </main>
+    
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
 </body>
 </html>
