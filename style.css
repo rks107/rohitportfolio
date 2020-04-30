@@ -354,15 +354,15 @@ section:nth-child(2n + 1) {
 .front-image-2
 {
 	
-	background-image:url("https://upload.wikimedia.org/wikipedia/commons/e/e0/Music_player_logo.png");
+	background-image:url("images/Music_player_logo.png");
 	background-size: cover;
 }
 .front-image-3
 {
 	
-	background-image:url("data/images/nodejs.png");
-	background-size: contain;
-	background-repeat: no-repeat;
+	background-image:url("images/calculator.png");
+	background-size: cover;
+	/* background-repeat: no-repeat; */
 }
 .back{
 	transform: rotateY(180deg);
