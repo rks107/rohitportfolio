@@ -1,29 +1,38 @@
 var navMenuAnchorTag = document.querySelectorAll('.scroll-function a');
-var interval;
+//var interval;
 for(var i = 0 ; i < navMenuAnchorTag.length ; i++) 
 {
     navMenuAnchorTag[i].addEventListener('click', function(event){
         event.preventDefault();
         var targetSectionId = this.textContent.trim().toLowerCase();
         var targetSection = document.getElementById(targetSectionId);
+        
+        var interval = setInterval(function(){
+            var targetSectionCoordinate = targetSection.getBoundingClientRect();
+            if(targetSectionCoordinate.top <= 10) {
+            clearInterval(interval);
+           return;
+           }
+        window.scrollBy(0, 50);
+        },10);
 
-        interval = setInterval(scrollVertically, 15, targetSection);
+        //interval = setInterval(scrollVertically, 15, targetSection);
         // interval = setInterval(function(){
         //     scrollVertically(targetSection);
         // } , 15);
     });
 }
 
-function scrollVertically(targetSection)
-{
-    var targetSectionCoordinate = targetSection.getBoundingClientRect();
-    if(targetSectionCoordinate.top <= 10) {
-        clearInterval(interval);
-        return;
-    }
-    window.scrollBy(0, 50);
+// function scrollVertically(targetSection)
+// {
+//     var targetSectionCoordinate = targetSection.getBoundingClientRect();
+//     if(targetSectionCoordinate.top <= 10) {
+//         clearInterval(interval);
+//         return;
+//     }
+//     window.scrollBy(0, 50);
     
-}
+// }
 
 //skill progress
 
