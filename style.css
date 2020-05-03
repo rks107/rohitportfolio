@@ -32,7 +32,7 @@ body {
     display: inline-block;
     margin: 0px 8px 8px 0px;
     font-weight: 100;
-    font-size: 0.9rem;
+    font-size: 1.1rem;
 }
 
 .horizontal-list li a {
@@ -184,7 +184,8 @@ section:nth-child(2n + 1) {
     color: white;
     font-size: 1rem;
     margin-left: 10px;
-    vertical-align: middle;
+    vertical-align: super;
+    /* margin-bottom: 5px; */
 }
 
 
@@ -650,6 +651,10 @@ button:focus {
 
 /*Percentage Classes */
 
+.seventy-percent {
+    height: inherit;
+    width: 70%;
+}
 .eighty-five-percent {
     height: inherit;
     width: 85%;
