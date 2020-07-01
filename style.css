@@ -360,11 +360,20 @@ section:nth-child(2n + 1) {
 }
 .front-image-3
 {
-	
+	background-image:url("images/todo_app.jpg");
+	background-size: cover;
+}
+.front-image-4
+{
 	background-image:url("images/calculator.png");
 	background-size: cover;
-	/* background-repeat: no-repeat; */
 }
+.front-image-5
+{
+	background-image:url("images/covid19.jpeg");
+	background-size: cover;
+}
+
 .back{
 	transform: rotateY(180deg);
 }
