@@ -371,7 +371,7 @@ section:nth-child(2n + 1) {
 .front-image-5
 {
 	background-image:url("images/covid19.jpeg");
-	background-size: cover;
+/* 	background-size: cover; */
 }
 
 .back{
