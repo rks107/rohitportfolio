@@ -125,3 +125,19 @@ function checkScroll()
 //     }
 
 // }
+
+
+//  Send a mail
+$(document).ready(function () {
+  $("#sub-btn").click(function () {
+    $("#contact-form").attr(
+      "action",
+      "mailto:rohit1071998@gmail.com?subject=" +
+        $("#input-sub").val() +
+        "&body=" +
+        $("#input-message").val()
+    );
+    $("#contact-form").submit();
+  });
+  console.log("hi", $("#input-message").val());
+});

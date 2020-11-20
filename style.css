@@ -336,7 +336,6 @@ section:nth-child(2n + 1) {
 	width:100%;
 	-webkit-backface-visibility: hidden;
 	backface-visibility: hidden;
-	border:1px solid black;
 	overflow: hidden;
 	transition: all .5s;
 }
@@ -349,8 +348,14 @@ section:nth-child(2n + 1) {
 .front-image-1
 {
 	
-	background-image:url("https://mir-s3-cdn-cf.behance.net/projects/404/8b37c464870545.5ae087dfb419a.jpg");
-	background-size: cover;
+	background-image:url("images/eventManager.png");
+    background-size: initial;
+}
+.front-image-6
+{
+	
+	background-image:url("images/slackMessanger.png");
+	/* background-size: cover; */
 }
 .front-image-2
 {
